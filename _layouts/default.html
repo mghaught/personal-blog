@@ -1,19 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    
-    {% include meta.html %}
-
+    <title>{{ page.title }}</title>
     <link rel="icon" href="{{ '/favicon.png' | relative_url }}">
     <link href="{{ '/assets/dist-style.css' | relative_url }}" rel="stylesheet">
   </head>
   <body class="page {{page.bodyClass}}">
+    <nav>
+      {% include navbar.html %}
+    </nav>
     {% include mobile-menu.html %}
     <div class="container mx-auto px-6 md:px-4">
-      {% include header.html %}
       {{content}}
       {% include footer.html %}
     </div>

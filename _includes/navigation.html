@@ -1,0 +1,7 @@
+<nav>
+  <ul class="menu menu-horizontal bg-base-200">
+    {% for item in site.data.navigation %}
+    <li><a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a></li>
+    {% endfor %}
+  </ul>
+  </nav>

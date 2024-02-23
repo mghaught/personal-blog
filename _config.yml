@@ -2,13 +2,13 @@ baseurl: "/"
 #remote_theme: zerostaticthemes/jekyll-atlantic-theme
 permalink: pretty
 title: "My Blog"
-collections_dir: collections
 markdown: kramdown
 highlighter: rouge
 
 layouts_dir: _layouts
 data_dir: _data
 includes_dir: _includes
+# posts_dir: _posts
 
 postcss:
   script: node_modules/.bin/postcss
@@ -18,8 +18,6 @@ sass:
   indentWidth: 4
   style: compact
   precision: 10
-
-google_analytics_id: false # replace with "UA-XXXX"
 
 logo:
   logo_desktop_image: assets/images/logo/logo.svg
@@ -31,16 +29,15 @@ logo:
   logo_mobile_height: "36px"
   logo_mobile_width: "36px"
 
-seo:
-  meta_twitter_site: "@zerostaticio"
-  meta_twitter_creator: "@zerostaticio"
-  meta_og_image: "https://www.zerostatic.io/theme/jekyll-atlantic/jekyll-atlantic-screenshot.png"
 
 plugins:
   #- jekyll-remote-theme # add this line to the plugins list if you already have one
   - jekyll-environment-variables
   - jekyll-paginate
   - jekyll-postcss-v2
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 paginate: 3
 paginate_path: /blog/page:num/
@@ -48,7 +45,6 @@ paginate_path: /blog/page:num/
 collections:
   posts:
     output: true
-    permalink: /blog/:path/
 
 defaults:
   - scope:
@@ -82,4 +78,3 @@ exclude:
   - .liquidrc
   - postcss.config.js
   - tailwind.config.js
-  - netlify.toml

@@ -1,0 +1,10 @@
+- name: Home
+  link: /
+- name: About
+  link: /about/
+- name: Posts
+  link: /posts/
+- name: Leadership
+  link: /leadership/
+- name: Speaking
+  link: /speaking/
