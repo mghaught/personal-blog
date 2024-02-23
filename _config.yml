@@ -1,10 +1,10 @@
 baseurl: "/"
 #remote_theme: zerostaticthemes/jekyll-atlantic-theme
-#permalink: pretty
+permalink: pretty
 title: "My Blog"
 #collections_dir: collections
-#markdown: kramdown
-#highlighter: rouge
+markdown: kramdown
+highlighter: rouge
 
 layouts_dir: _layouts
 data_dir: _data
@@ -13,6 +13,22 @@ includes_dir: _includes
 postcss:
   script: node_modules/.bin/postcss
   config: postcss.config.js
+
+sass:
+  indentWidth: 4
+  style: compact
+  precision: 10
+
+logo:
+  logo_desktop_image: assets/images/logo/logo.svg
+  logo_desktop_text: "Jekyll <strong>Atlantic</strong>"
+  logo_mobile_image: assets/images/logo/logo-mobile.svg
+  logo_mobile_text: ""
+  logo_desktop_height: "36px"
+  logo_desktop_width: "36px"
+  logo_mobile_height: "36px"
+  logo_mobile_width: "36px"
+
 
 plugins:
   #- jekyll-remote-theme # add this line to the plugins list if you already have one
@@ -29,20 +45,36 @@ paginate_path: /blog/page:num/
 collections:
   posts:
     output: true
-    permalink: /blog/:path/
 
 defaults:
   - scope:
       path: ""
-      type: "authors"
+      type: posts
     values:
-      layout: "author"
+      layout: post
   - scope:
-      path: ""
-      type: "posts"
+      path: "images"
     values:
-      layout: "post"
+      image: true
   - scope:
-      path: ""
+      path: "categories"
     values:
-      layout: "default"
+      layout: category
+      permalink: /category/:basename/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - yarn.lock
+  - package.json
+  - package-lock.json
+  - vendor
+  - LICENSE.md
+  - LICENSE
+  - README.md
+  - .vscode
+  - .gitignore
+  - .liquidrc
+  - postcss.config.js
+  - tailwind.config.js
