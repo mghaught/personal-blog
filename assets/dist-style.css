@@ -2701,6 +2701,10 @@ html {
   top: 1.75rem;
 }
 
+.right-0 {
+  right: 0px;
+}
+
 .z-0 {
   z-index: 0;
 }

@@ -1,8 +1,9 @@
-<div class="navbar bg-base-100">
+<nav class="navbar bg-base-100">
     <div class="flex-1">
       <ul class="menu menu-horizontal bg-base-200">
         {% for item in site.data.navigation %}
-        <li><a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a></li>
+        <li><a href="{{ item.link }}" {% if page.url == item.link %}
+          class="current"{% endif %}>{{ item.name }}</a></li>
         {% endfor %}
       </ul>
     </div>
@@ -11,4 +12,4 @@
         <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
       </div>
     </div>
-  </div>
+</nav>

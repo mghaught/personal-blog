@@ -4,9 +4,15 @@ layout: default
 
 {% include heading.html heading=page.heading %}
 <main class="py-6">
-  {% for post in site.posts %}
-  <div class="mb-12">
-    {% include summary.html post=post %}
-  </div>
-  {% endfor %}
-</main>
+  {% include sidebar.html %}
+	{% for post in site.posts %}
+	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+	<div class="mb-12">
+	  	{{post.excerpt}}
+	</div>
+  {% increment num %}
+  {% if num == 3 %}
+    {% break %}
+  {% endif %}
+	{% endfor %}
+  </main>
