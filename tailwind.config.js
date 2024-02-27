@@ -14,10 +14,10 @@ module.exports = {
       //"autumn",
       "winter",
       "bumblebee",
-      "lemonade",
+      //"lemonade",
       "forest",
       "sunset",
-      "bumblebee",
+      //"bumblebee",
       "autumn",
       "emerald",
       {
