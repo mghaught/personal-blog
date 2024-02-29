@@ -8,23 +8,25 @@ If running for the first time, first:
 
 2. in terminal, run: bundler install
 
-3. run: npm install -D tailwindcss (note: if you don't have/want Node.js and npm, there's a standalone CLI build here: <https://tailwindcss.com/blog/standalone-cli>)
+3. run: npm install
 
 4. run: npx tailwindcss init
 
 OR tailwindcss command
 
-# Start a watcher
+## Start a watcher
 
 ./tailwindcss -i input.css -o output.css --watch
 
-# Compile and minify your CSS for production
+## Compile and minify your CSS for production
 
 ./tailwindcss -i input.css -o output.css --minify
 
 If running for the second+ time:
 
 1. run: bundler update
+
+2. run: npm update
 
 In all cases, after setup/updates, you need to run the following commands to get the site actually generating itself properly:
 
