@@ -16,11 +16,11 @@ OR tailwindcss command
 
 ## Start a watcher
 
-./tailwindcss -i input.css -o output.css --watch
+./tailwindcss -i ./assets/css/style.css -o ./assets/dist-style.css --watch
 
 ## Compile and minify your CSS for production
 
-./tailwindcss -i input.css -o output.css --minify
+./tailwindcss -i ./assets/css/style.css -o ./assets/dist-style.css --minify
 
 If running for the second+ time:
 
