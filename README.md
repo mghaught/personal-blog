@@ -35,3 +35,6 @@ In all cases, after setup/updates, you need to run the following commands to get
 
 2. run:
    jekyll serve (this hosts the site locally)
+
+3. Launch the site
+http://127.0.0.1:4000/
