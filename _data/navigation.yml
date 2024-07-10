@@ -1,10 +1,10 @@
 - name: Home
   link: /
-- name: About
-  link: /about/
-- name: Posts
-  link: /posts/
-- name: Leadership
-  link: /leadership/
+- name: Writing
+  link: /writing/
+- name: Giving Back
+  link: /giving-back/
 - name: Speaking
   link: /speaking/
+- name: About
+  link: /about/

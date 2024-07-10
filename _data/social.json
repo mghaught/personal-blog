@@ -1,12 +1,12 @@
 [
   {
-    "name": "Github",
-    "link": "https://github.com/zerostaticthemes/jekyll-atlantic-theme",
-    "image": "https://simpleicons.org/icons/github.svg"
+    "name": "LinkedIn",
+    "link": "https://www.linkedin.com/in/martyhaught/",
+    "image": "https://simpleicons.org/icons/linkedin.svg"
   },
   {
     "name": "Twitter",
-    "link": "https://twitter.com/zerostaticio",
+    "link": "https://twitter.com/mghaught",
     "image": "https://simpleicons.org/icons/twitter.svg"
   }
 ]
