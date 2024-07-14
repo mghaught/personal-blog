@@ -1,0 +1,18 @@
+---
+layout: home
+heading: <em>Marty's</em> Blog
+description: Time to make this site look good
+---
+
+{% include heading.html heading=page.heading %}
+
+<h1>Latest Posts</h1>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
+</ul>
