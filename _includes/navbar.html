@@ -1,13 +1,13 @@
 <nav class="navbar bg-base-100">
     <div class="flex-1">
-      <ul class="menu menu-horizontal bg-base-200">
+      <ul class="menu menu-lg menu-horizontal">
         {% for item in site.data.navigation %}
-        <li><a href="{{ item.link }}" {% if page.url == item.link %}
-          class="current"{% endif %}>{{ item.name }}</a></li>
+        <li><button class="btn btn-ghost target:btn-outline"><a href="{{ item.link }}" {% if page.url == item.link %}
+          class="current"{% endif %}>{{ item.name }}</a></button></li>
         {% endfor %}
       </ul>
     </div>
-    <div class="flex-none gap-2">
+    <div class="flex-none gap-5 pr-4">
       <div class="form-control">
         <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
       </div>

@@ -3,8 +3,10 @@ module.exports = {
   content: [ 
       '_includes/**/*.html',
       '_layouts/**/*.html',
-      '*.markdown'
+      '*.{markdown,md}',
+      "./node_modules/flowbite/**/*.js"
   ],
+  //darkmode: 'class',
   theme: {
       extend: {},
   },
@@ -37,5 +39,5 @@ module.exports = {
     darkTheme: "sunset",
     base: true,
   },
-  plugins: [require("@tailwindcss/typography"), require("daisyui")],
+  plugins: [require("@tailwindcss/typography"), require("daisyui"), require("flowbite/plugin")],
 }
