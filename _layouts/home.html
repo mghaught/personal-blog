@@ -5,21 +5,27 @@ title: Marty Haught
 description: Engineering leader near Boulder, Colorado
 ---
 
-{% include heading.html heading=page.heading %}
 <main class="py-6">
-  <h2>
-    Engineering leader near Boulder, Colorado.  Mentor to entrepreneurs, Advisor to startups. HashiCorp and Fastly alum. 
-  </h2>
 
-  {% include sidebar.html %}
-	{% for post in site.posts %}
-	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+
+<section>
+  <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-12">
+    <h1 class="heading mb-4 text-4xl md:text-6xl font-bold font-sans leading-none tracking-tight">
+    {{ page.heading }}
+  </h1>
+    <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">Engineering leader near Boulder, Colorado.  Mentor to entrepreneurs, Advisor to startups. HashiCorp and Fastly alum.</p>
+  </div>
+</section>
+  <section class="container mx-auto prose text-center">
+    <h2>Recent Posts</h2>
+    <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+	{% for post in site.posts limit:3 %}
+	<h3 href="{{ post.url }}">{{ post.title }}</h3>
 	<div class="mb-12">
 	  	{{post.excerpt}}
 	</div>
-  {% increment num %}
-  {% if num == 3 %}
-    {% break %}
-  {% endif %}
+  <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
 	{% endfor %}
+  </section>
+  
   </main>

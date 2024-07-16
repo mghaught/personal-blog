@@ -6,7 +6,7 @@ module.exports = {
       '*.{markdown,md}',
       "./node_modules/flowbite/**/*.js"
   ],
-  //darkmode: 'class',
+  darkmode: 'class',
   theme: {
       extend: {},
   },

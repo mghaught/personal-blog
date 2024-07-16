@@ -3,6 +3,7 @@
 @tailwind utilities;
 @import "assets/css/custom.css";
 @import "assets/css/syntax/monokai";
+@import "node_modules/@tailwindcss/typography/src/**.js";
 
 @layer base {
   h1 {
