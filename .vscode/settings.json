@@ -23,5 +23,11 @@
     "**/node_modules": true,
     "**/_site": true,
     "**/.jekyll-cache": true
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
   }
 }
