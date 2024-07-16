@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: page
 title: Giving Back
 permalink: /giving-back/
 ---
