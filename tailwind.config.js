@@ -1,14 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [ 
-      '_includes/**/*.html',
-      '_layouts/**/*.html',
-      '*.{markdown,md}',
-      "./node_modules/flowbite/**/*.js"
-  ],
-  darkmode: 'class',
+  content: ["_includes/**/*.html", "_layouts/**/*.html", "*.{markdown,md}", "./node_modules/flowbite/**/*.js"],
+  darkmode: "class",
   theme: {
-      extend: {},
+    extend: {},
   },
   daisyui: {
     themes: [
@@ -40,4 +35,4 @@ module.exports = {
     base: true,
   },
   plugins: [require("@tailwindcss/typography"), require("daisyui"), require("flowbite/plugin")],
-}
+};

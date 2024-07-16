@@ -1,8 +1,10 @@
 <nav class="navbar bg-base-100 shadow-sm">
   <div class="flex-1 justify-start">
-    <button class="btn btn-lg btn-ghost height:5rem leading-relaxed text-3xl font-bold justify-start"><a href="/" 
+    <button class="px-8 height:5rem leading-relaxed text-4xl font-bold justify-start"><a href="/" 
     {% if page.url == "/" %}
       class="current text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary"
+    {% else %}
+      class="current text-transparent bg-clip-text bg-gradient-to-r from-neutral to-secondary"
     {% endif %}>
     Marty Haught</a></button>
   </div>
@@ -12,7 +14,7 @@
           {% if item.link == "/" %}
             {% continue %}
           {% endif %}
-        <li><button class="btn btn-ghost btn-lg"><a href="{{ item.link }}" 
+        <li><button class="leading-relaxed px-6 text-xl font-semibold"><a href="{{ item.link }}" 
         {% if page.url == item.link %}
           class="current text-primary"
         {% endif %}>

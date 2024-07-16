@@ -4,13 +4,13 @@ layout: page
 <main>
     <article class="prose max-w-none">{{ content }}</article>
 <section class="container mx-auto prose max-w-none">
-    <hr class="h-px my-8 bg-secondary border-0 dark:bg-primary">
+    
 	{% for post in site.posts %}
+    <hr class="h-px my-8 bg-secondary border-0 dark:bg-primary">
 	<h3 href="{{ post.url }}">{{ post.title }}</h3>
 	<div class="mb-12">
 	  	{{post.excerpt}}
 	</div>
-  <hr class="h-px my-8 bg-secondary border-0 dark:bg-primary">
 	{% endfor %}
   </section>
 </main>
