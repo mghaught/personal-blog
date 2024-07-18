@@ -4396,6 +4396,10 @@ details.collapse summary::-webkit-details-marker {
   margin-bottom: 1rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -4426,10 +4430,6 @@ details.collapse summary::-webkit-details-marker {
 
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.mb-6 {
-  margin-bottom: 1.5rem;
 }
 
 .block {
@@ -4819,11 +4819,6 @@ details.collapse summary::-webkit-details-marker {
   background-color: rgb(255 255 255 / 0.5);
 }
 
-.bg-accent {
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-a,oklch(var(--a)/var(--tw-bg-opacity)));
-}
-
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -4855,10 +4850,6 @@ details.collapse summary::-webkit-details-marker {
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
-}
-
-.fill-primary {
-  fill: var(--fallback-p,oklch(var(--p)/1));
 }
 
 .p-1 {
